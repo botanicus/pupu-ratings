@@ -1,14 +1,15 @@
 # dependencies of the pupu
-#dependencies :mootools
+dependency :mootools
 
 # javascripts for loading
-javascripts "ratings", :in => "lib"
+javascripts "ratings", "ie6-png-fix"
 
 # parameters of plugin
 # it will be blank in most cases
-#parameter :request, :optional => ["local", "ajax"] do |type|
-#  javascript "lib/autocompleter.#{type}"
-#end
+parameter :style, :optional => ["star", "heart"] do |type|
+  # TODO
+  #stylesheet "lib/autocompleter.#{type}"
+end
 
 # you can put there message which will be displayed after installation
 #message "foo"

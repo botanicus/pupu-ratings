@@ -1,3 +1,4 @@
 window.addEvent("domready", function() {
-  // add your code here
+  // http://msteigerwalt.com/widgets/ratings/v1.4
+  new RabidRatings({url:'/smartlinks/rate'});
 })
